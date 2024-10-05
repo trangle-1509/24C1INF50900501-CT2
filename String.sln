@@ -1,55 +1,94 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.12.35209.166
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT1", "BT1\BT1.csproj", "{DD6515DA-A256-495B-BF66-864EAD39D8D0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT2", "BT2\BT2.csproj", "{8F49E96C-8290-47C9-9E98-31C7AC5A456F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT3", "BT3\BT3.csproj", "{A554686E-E49D-4C22-B789-EF2A4F275869}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT4", "BT4\BT4.csproj", "{4E34A3CB-6A44-4C6E-89D6-80E0CB463921}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT5", "BT5\BT5.csproj", "{48D87D3A-A28C-4B6A-AD67-CF5E17C23AB7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT6", "BT6\BT6.csproj", "{9BF72CF6-E067-48F1-9DC1-F3DE2195391D}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DD6515DA-A256-495B-BF66-864EAD39D8D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD6515DA-A256-495B-BF66-864EAD39D8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD6515DA-A256-495B-BF66-864EAD39D8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD6515DA-A256-495B-BF66-864EAD39D8D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F49E96C-8290-47C9-9E98-31C7AC5A456F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F49E96C-8290-47C9-9E98-31C7AC5A456F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F49E96C-8290-47C9-9E98-31C7AC5A456F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F49E96C-8290-47C9-9E98-31C7AC5A456F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A554686E-E49D-4C22-B789-EF2A4F275869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A554686E-E49D-4C22-B789-EF2A4F275869}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A554686E-E49D-4C22-B789-EF2A4F275869}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A554686E-E49D-4C22-B789-EF2A4F275869}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E34A3CB-6A44-4C6E-89D6-80E0CB463921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E34A3CB-6A44-4C6E-89D6-80E0CB463921}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E34A3CB-6A44-4C6E-89D6-80E0CB463921}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E34A3CB-6A44-4C6E-89D6-80E0CB463921}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48D87D3A-A28C-4B6A-AD67-CF5E17C23AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48D87D3A-A28C-4B6A-AD67-CF5E17C23AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48D87D3A-A28C-4B6A-AD67-CF5E17C23AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48D87D3A-A28C-4B6A-AD67-CF5E17C23AB7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9BF72CF6-E067-48F1-9DC1-F3DE2195391D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9BF72CF6-E067-48F1-9DC1-F3DE2195391D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9BF72CF6-E067-48F1-9DC1-F3DE2195391D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9BF72CF6-E067-48F1-9DC1-F3DE2195391D}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D1927EF5-6399-49D2-892F-2FC93F34B077}
-	EndGlobalSection
-EndGlobal
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        //baitap_1(); 
+        //baitap_2(); 
+        //baitap_3(); 
+        //baitap_4(); 
+        //baitap_5(); 
+        baitap_6(); 
+}
+static void baitap_1()
+{
+    Console.Write("Input the string: ");
+    string inputTheString = Console.ReadLine();
+    Console.WriteLine("The string you entered is: " + inputTheString);
+    Console.ReadLine();
+}
+static void baitap_2()
+{
+    Console.Write("Input the string: ");
+    string inputTheString = Console.ReadLine();
+    //int length = inputTheString.Length;
+    int length = 0;
+    foreach (char c in inputTheString)
+    {
+        length++;
+    }
+    Console.WriteLine("Length of the string is: " + length);
+    Console.ReadLine();
+}
+static void baitap_3()
+{
+    Console.Write("Input the string: ");
+    string inputTheString = Console.ReadLine();
+    Console.Write("The characters of the string are: ");
+    foreach (char c in inputTheString)
+    {
+        Console.Write(c + " ");
+    }
+    Console.ReadLine();
+}
+static void baitap_4()
+{
+    Console.Write("Input the string: ");
+    string inputTheString = Console.ReadLine();
+    Console.Write("The characters of the string in reverse are: ");
+    char[] charArray = inputTheString.ToCharArray();
+    Array.Reverse(charArray);
+    string reversedString = new string(charArray);
+    foreach (char c in reversedString )
+    {
+        Console.Write(c + " ");
+    }
+    Console.ReadLine();
+}
+static void baitap_5()
+{
+    Console.Write("Input the string: ");
+    string inputTheString = Console.ReadLine();
+    string[] words = inputTheString.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+    int wordscount = 0; 
+    foreach (string word in words) 
+    {
+        wordscount++;
+    }
+    Console.Write("Total number of words in string: " + wordscount);
+    Console.ReadLine();
+}
+static void baitap_6()
+{
+    Console.Write("Input the 1st string: ");
+    string firstString = Console.ReadLine();
+    Console.Write("Input the 2nd string: ");
+    string secondString = Console.ReadLine();
+    int length1 = 0;
+    int length2 = 0;                
+    foreach (char c in firstString) 
+    {
+        length1++;
+    }
+    foreach (char c in secondString)
+    {
+        length2++;
+    }
+    if (length1 == length2)
+    {
+        Console.WriteLine("The length of both strings are equal"
+        bool Equal = true;
+
+    }
+}
+
+
